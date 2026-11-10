@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MSG_Paintball")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+9c555a7ddb5e64b086de83748d8891e7211c7689")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+c763ceed9b5142281572d2765fc510eefd8cd1fd")]
 [assembly: System.Reflection.AssemblyProductAttribute("MSG_Paintball")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MSG_Paintball")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
