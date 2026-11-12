@@ -7,11 +7,14 @@ namespace msg_MAUI2
         public App()
         {
             InitializeComponent();
+
+            Routing.RegisterRoute(nameof(MainPage), typeof(MainPage));
         }
 
         protected override Window CreateWindow(IActivationState? activationState)
         {
             return new Window(new AppShell());
         }
+        
     }
 }

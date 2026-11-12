@@ -11,6 +11,8 @@ namespace msg_MAUI2
         public MainPage()
         {
             InitializeComponent();
+            LogoImage.Source = ImageSource.FromFile(@"C:\xampp\htdocs\Websites\MSG\Image\Logo2.gif");
+
         }
 
         private async void GetGames_Clicked(object sender, EventArgs e)
