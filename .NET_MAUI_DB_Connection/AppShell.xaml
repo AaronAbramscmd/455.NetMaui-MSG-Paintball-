@@ -8,17 +8,22 @@
     FlyoutBehavior="Flyout"
     Shell.BackgroundColor="Black"
     Shell.ForegroundColor="Black">
-    
+
     <ShellContent
         Title="Login"
         ContentTemplate="{DataTemplate local:MSG_Login}"
         Route="MSG_Login" />
-    <FlyoutItem Title="MainPage">
+
+    <FlyoutItem Title="Main Page">
         <ShellContent
             ContentTemplate="{DataTemplate local:MainPage}"
             Route="MainPage" />
     </FlyoutItem>
 
-    
+    <FlyoutItem Title="Hours and Locations">
+        <ShellContent
+            ContentTemplate="{DataTemplate local:HoursLocationsPage}"
+            Route="HoursLocationsPage" />
+    </FlyoutItem>
 
 </Shell>
