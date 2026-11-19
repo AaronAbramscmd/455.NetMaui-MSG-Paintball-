@@ -1,0 +1,101 @@
+<?<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="msg_MAUI2.HoursLocationsPage"
+             Title="Hours/Locations"
+             BackgroundColor="#0d0d0d">
+
+    <ScrollView>
+        <StackLayout Padding="20,30,20,30" Spacing="15">
+
+            <Label Text="Our Hours and Locations" 
+                   TextColor="#d00000" 
+                   FontSize="32" 
+                   FontAttributes="Bold" 
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Find out when we are open and where to find us!" 
+                   TextColor="White" 
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Pro-Shop Location" 
+                   TextColor="White" 
+                   FontSize="24" 
+                   FontAttributes="Bold"
+                   Margin="0,20,0,0"/>
+
+            <Label Text="(This is NOT the Paintball Field)" 
+                   TextColor="#cccccc" 
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Adress: 1934 Route 211 East Middletown, NY 10941" 
+                   TextColor="#ff3333" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Phone number: 845-457-4678" 
+                   TextColor="#cccccc" 
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Pro-Shop Hours" 
+                   TextColor="#ff3333" 
+                   FontSize="20" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,0"/>
+
+            <Label Text="Monday: 11:00am - 5:00pm" TextColor="White" HorizontalOptions="Center"/>
+            <Label Text="Tuesday: 11:00am - 5:00pm" TextColor="White" HorizontalOptions="Center"/>
+            <Label Text="Wednesday: 11:00am - 5:00pm" TextColor="White" HorizontalOptions="Center"/>
+            <Label Text="Thursday: 11:00am - 5:00pm" TextColor="White" HorizontalOptions="Center"/>
+            <Label Text="Friday: 11:00am - 5:00pm" TextColor="White" HorizontalOptions="Center"/>
+            <Label Text="Saturday: 9:00am - 5:00pm" TextColor="White" HorizontalOptions="Center"/>
+            <Label Text="Sunday: 9:00am - 5:00pm" TextColor="White" HorizontalOptions="Center"/>
+
+            <BoxView HeightRequest="2" Color="#333333" Margin="0,20,0,20"/>
+
+            <Label Text="Paintball Field Location" 
+                   TextColor="White" 
+                   FontSize="24" 
+                   FontAttributes="Bold"/>
+
+            <Label Text="Adress: 162 O'Haire Road Middletown, NY 10941" 
+                   TextColor="#ff3333" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Follow the long gravel road into our parking lot." 
+                   TextColor="White" 
+                   HorizontalOptions="Center"/>
+
+            <Label Text="Paintball Field Hours" 
+                   TextColor="#ff3333" 
+                   FontSize="20" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,10,0,0"/>
+
+            <Label Text="Open every Saturday & Sunday: 10:00am - 5:00pm" TextColor="White" HorizontalOptions="Center"/>
+            <Label Text="Open during the week by reservation of 15 or more players." TextColor="White" HorizontalOptions="Center"/>
+
+            <Label Text="Map to the Field" 
+                   TextColor="#ff3333" 
+                   FontSize="20" 
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,30,0,10"/>
+
+            <Border Stroke="#b00000" StrokeThickness="2" HeightRequest="300" Margin="0,0,0,20">
+                <WebView Source="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2989.4443180117373!2d-74.30519752508795!3d41.47296609068427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89dcd4b5459720df%3A0x7cb30ffd9342d1ca!2sMSG%20Paintball%20Field!5e0!3m2!1sen!2sus!4v1789660339891!5m2!1sen!2sus" />
+            </Border>
+
+            <Button Text="Contact Us Here" 
+                    BackgroundColor="#d00000" 
+                    TextColor="White" 
+                    FontAttributes="Bold"
+                    CornerRadius="5"
+                    Clicked="OnContactClicked"/>
+
+        </StackLayout>
+    </ScrollView>
+</ContentPage>
