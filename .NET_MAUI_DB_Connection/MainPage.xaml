@@ -1,49 +1,37 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="msg_MAUI2.MainPage">
+             x:Class="msg_MAUI2.MainPage"
+             BackgroundColor="#0d0d0d">
 
-    <ScrollView
-        BackgroundColor="Black">
-        <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
-            <Image
-                x:Name="LogoImage"
-                Source="Logo2.gif" IsAnimationPlaying="True"
-                HeightRequest="100"
-                HorizontalOptions="Start"
-                Aspect="AspectFit" />
+    <StackLayout Padding="30" Spacing="20" VerticalOptions="Center">
+        
+        <Label Text="MSG Paintball Dashboard" 
+               TextColor="White" 
+               FontSize="30" 
+               FontAttributes="Bold" 
+               HorizontalOptions="Center"/>
+        
+        <Label Text="Welcome back to the app!" 
+               TextColor="#cccccc" 
+               HorizontalOptions="Center"
+               Margin="0,0,0,20"/>
 
-            <Label
-                x:Name="Hours"
-                Text="Hours" 
-                TextColor="White"
-                
-                VerticalOptions="Center"/>
+        <Button Text="View Hours and Locations" 
+                Clicked="OnHoursClicked" 
+                BackgroundColor="#d00000" 
+                TextColor="White" 
+                FontAttributes="Bold"
+                CornerRadius="5"
+                HeightRequest="50"/>
 
-            <Label
-                TextColor="Red"
-                Text="MSG CUSTOMERS!!"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
-
-
-            <Button
-                BackgroundColor="Red"
-                x:Name="GetGames"
-                Text="Book a party" 
-                Clicked="GetGames_Clicked"
-                HorizontalOptions="Fill" 
-                WidthRequest="350"/>
-
-            <Label
-                x:Name="GameResults"
-                Text="The database results will show up here"
-                TextColor="White"/>
-        </VerticalStackLayout>
-
-    </ScrollView>
-
-
+        <Button Text="Log Out" 
+                Clicked="OnLogoutClicked" 
+                BackgroundColor="#333333" 
+                TextColor="White" 
+                FontAttributes="Bold"
+                CornerRadius="5"
+                HeightRequest="50"/>
+        
+    </StackLayout>
 </ContentPage>
